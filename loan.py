@@ -20,3 +20,7 @@ def create_loan(loan: loan):
         return {"message": "Loan application rejected. Interest rate cannot be negative."}
     else:
         return {"message": f"Loan application accepted for loan ID: {loan.loan_id} with amount: {loan.amount} and interest rate: {loan.interest_rate}%."}
+    
+@app.get("/customer/{customer_id}")
+def get_customer(customer_id: int):
+    return {"message": f"Customer details for ID: {customer_id}"}
