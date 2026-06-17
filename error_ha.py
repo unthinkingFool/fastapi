@@ -22,12 +22,15 @@ def get_student(student_id: int):
     student = students.get(student_id)
     if student:
         return {"student_id": student_id, "name": student["name"], "age": student["age"], "marks": student["marks"], "grade": student["grade"]}
-    else:
-        return {"error": "Student not found"}
+  
     
 @app.post("/students")
-def create_student(student: student):
-    if student.id in students:
-        raise HTTPException(status_code=400, detail="Student with this ID already exists")
+def submit_marks(student: student):
+    if student.id not in students:
+        raise HTTPException(status_code=404, detail="Student not found")
+    if student.marks < 0 or student.marks > 100:
+        raise HTTPException(status_code=400, detail="Marks must be between 0 and 100 , but got {}".format(student.marks))
+    if student.name.strip() == "":
+        raise HTTPException(status_code=400, detail="Name cannot be empty")
     students[student.id] = {"name": student.name, "age": student.age, "marks": student.marks, "grade": student.grade}
-    return {"message": "Student created successfully", "student_id": student.id}
+    return {"message": "Student marks submitted successfully", "student_id": student.id, "name": student.name, "age": student.age, "marks": student.marks, "grade": student.grade}
