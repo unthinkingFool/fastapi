@@ -1,4 +1,4 @@
-# 🚀 From Notebooks to Production: My MLOps & FastAPI Journey
+#  From Notebooks to Production: My MLOps & FastAPI Journey
 
 Hi there! 👋 Welcome to my FastAPI microservice playground. If you are a recruiter, an engineering manager, or just a fellow builder exploring my GitHub—thank you for stopping by! **Be sure to check out my main profile for more projects that push the boundaries of AI.**
 
@@ -73,9 +73,9 @@ Skeptical? I encourage you to spin it up and test the inference yourself!
 
 ## 🔮 What's Next?
 This was just the beginning. To reach my goal of becoming a top-tier **GenAI/Agent Expert**, my next steps for scaling this architecture include:
-- 🐳 **Containerization:** Wrapping this entire service in a Docker container for cloud-agnostic deployment.
-- 🔒 **Security:** Adding OAuth2 Authentication to secure the ML endpoints.
-- 🤖 **Agentic Integration:** Connecting this microservice as a standalone "tool" that an LLM agent can call autonomously to reason about real estate valuations.
+-  **Containerization:** Wrapping this entire service in a Docker container for cloud-agnostic deployment.
+-  **Security:** Adding OAuth2 Authentication to secure the ML endpoints.
+-  **Agentic Integration:** Connecting this microservice as a standalone "tool" that an LLM agent can call autonomously to reason about real estate valuations.
 
 ---
-*If you are looking for an engineer who understands both the algorithms that power AI and the infrastructure required to scale them—let's talk! Head over to my [GitHub Profile](https://github.com/yourusername) to see what I'm building next.*
+*If you are looking for an engineer who understands both the algorithms that power AI and the infrastructure required to scale them—let's talk! Head over to my [GitHub Profile](https://github.com/unthinkingFool) to see what I'm building next.*
